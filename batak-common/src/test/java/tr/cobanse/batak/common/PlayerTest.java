@@ -29,6 +29,6 @@ class PlayerTest {
 		Player player = new Player("selami") {};
 		player.drawCard(card);
 		player.discardCard(card); 
-		assertEquals(1, player.cardSize(), "can not draw card");
+		assertEquals(0, player.cardSize(), "card should be discarded");
 	}
 }

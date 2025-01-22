@@ -120,6 +120,7 @@ public class ResponseMessage {
 		this.currentPlayer = currentPlayer;
 	}
 	
+	
 	@Override
 	public String toString() {
 		return "ResponseMessage [responseType=" + responseType + ", availableGames=" + availableGames
