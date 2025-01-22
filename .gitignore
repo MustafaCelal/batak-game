@@ -2,4 +2,28 @@
 Servers/
 .sonarlint/
 
+#target folders
+batak-server/target
+batak-common/target
+batak-client/target
+
+#intellij
 .idea
+batak-client/.idea
+batak-common/.idea
+batak-server/.idea
+
+#batak-client eclipse settings
+batak-client/.classpath
+batak-client/.project
+batak-client/.settings
+
+#batak-server eclipse settings
+batak-server/.classpath
+batak-server/.project
+batak-server/.settings
+
+#batak-common eclipse settings
+batak-common/.classpath
+batak-common/.project
+batak-common/.settings

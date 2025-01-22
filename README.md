@@ -63,3 +63,20 @@
 	
 	
 ## Technical implementations and Design Decisions
+
+## Installation and Development
+
+This project requires `java 1.8`
+
+1. You need to build common project 
+```shell 
+  cd batak-common && mvn clean install
+```
+2. build and run server project
+```shell 
+  cd batak-server && mvn clean install
+```
+```shell 
+  mvn exec:java -Dexec.mainClass=tr.cobanse.batak.server.ConnectionRequestHandler
+```
+

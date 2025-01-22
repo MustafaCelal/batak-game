@@ -16,6 +16,7 @@ import tr.cobanse.batak.common.IBatakGame;
 import tr.cobanse.batak.common.Player;
 import tr.cobanse.batak.common.Symbol;
 import tr.cobanse.batak.server.deck.BatakException;
+import tr.cobanse.batak.server.util.GameExceptionMessage;
 
 public class BatakGame implements CardGame, IBatakGame {
 
@@ -47,7 +48,7 @@ public class BatakGame implements CardGame, IBatakGame {
 		synchronized (players) {
 			logger.info("adding {} th player",  nOfPlayers);
 			if(nOfPlayers==4) {
-				throw new BatakException("max reached");
+				throw new BatakException(GameExceptionMessage.GAME_ROOM_FULL);
 			}
 			players.add(player);
 			nOfPlayers++;
