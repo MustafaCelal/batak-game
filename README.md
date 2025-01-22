@@ -79,4 +79,13 @@ This project requires `java 1.8`
 ```shell 
   mvn exec:java -Dexec.mainClass=tr.cobanse.batak.server.ConnectionRequestHandler
 ```
+3. build and run client project
+```shell 
+  cd batak-client && mvn clean install
+```
 
+[//]: # (```shell )
+
+[//]: # (  mvn exec:java -Dexec.mainClass=tr.cobanse.client.gui.GameClient)
+
+[//]: # (```)

@@ -55,7 +55,7 @@ public class ClientSocket {
 					}
 					logger.debug("received msg: {}", msg);
 					serverMessage = gson.fromJson(msg, ResponseMessage.class);
-					logger.debug(serverMessage.getMessage());
+					logger.debug(serverMessage.getChatMessage());
 					for (GameSocketListener gameSocketListener : listeners) {
 						gameSocketListener.onEventReceived(serverMessage); 
 					}
