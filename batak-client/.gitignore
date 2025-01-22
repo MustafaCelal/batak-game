@@ -1,1 +1,8 @@
 /target/
+
+.idea
+
+# eclispe confs
+.settings
+.classpath
+.project
